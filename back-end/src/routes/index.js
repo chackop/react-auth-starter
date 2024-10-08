@@ -4,9 +4,11 @@ import { googleOauthCallbackRoute } from "./googleOauthCallbackRoute";
 import { logInRoute } from "./logInRoute";
 import { resetPasswordRoute } from "./resetPasswordRoute";
 import { signUpRoute } from "./signUpRoute";
+import { signUpRouteAWS } from "./signUpRouteAWS";
 import { testRoute } from "./testRoute";
 import { updateUserInfoRoute } from "./updateUserInfoRoute";
 import { verifyEmailRoute } from "./verifyEmailRoute";
+import { verifyEmailRouteAWS } from "./verifyEmailRouteAWS";
 
 export const routes = [
   forgotPasswordRoute,
@@ -15,7 +17,9 @@ export const routes = [
   logInRoute,
   resetPasswordRoute,
   signUpRoute,
+  signUpRouteAWS,
   testRoute,
   updateUserInfoRoute,
   verifyEmailRoute,
+  verifyEmailRouteAWS,
 ];
