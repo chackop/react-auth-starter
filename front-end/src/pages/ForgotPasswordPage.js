@@ -10,10 +10,14 @@ export const ForgotPasswordPage = () => {
 
   const onSubmitClicked = async () => {
     try {
-      await axios.put(`/api/forgot-password/${emailValue}`);
+      // await axios.put(`/api/forgot-password/${emailValue}`); // For GCP
+      await axios.put(`/api/forgot-password-aws/${emailValue}`);
       setSuccess(true);
       setTimeout(() => {
-        history.push("/login");
+        // history.push("/login"); // For GCP
+        history.push(
+          `/reset-password-aws?email=${encodeURIComponent(emailValue)}`
+        );
       }, 3000);
     } catch (e) {
       setErrorMessage(e.message);

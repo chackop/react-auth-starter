@@ -16,7 +16,7 @@ export const Routes = () => {
         <PrivateRoute path="/" exact>
           <UserInfoPage />
         </PrivateRoute>
-        <Route path="/verify-email-code" exact>
+        <Route path="/verify-email" exact>
           <EmailVerificationCodePage />
         </Route>
         <Route path="/verify-email/:verificationString">
